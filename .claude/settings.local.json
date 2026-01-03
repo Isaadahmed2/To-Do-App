@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npm install)",
+      "Bash(uv venv:*)",
+      "Bash(uv pip install:*)",
+      "Bash(curl:*)",
+      "Bash(sh:*)",
+      "Bash(uv run:*)",
+      "Bash(python -m app.main:*)",
+      "Bash(python:*)"
+    ]
+  }
+}
