@@ -9,7 +9,11 @@
       "Bash(sh:*)",
       "Bash(uv run:*)",
       "Bash(python -m app.main:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(dir /b:*)",
+      "Bash(docker-compose up:*)",
+      "Bash(docker-compose down:*)",
+      "Bash(docker-compose ps:*)"
     ]
   }
 }

@@ -39,3 +39,41 @@ npm run dev
 your application frontend will run on 
 
 [http://localhost:5173/](http://localhost:5173/)
+
+
+## Run applicaiton using docker
+
+```
+  # Build and start all services
+  docker-compose up --build
+
+  # Or run in detached mode (background)
+  docker-compose up --build -d
+
+  Other useful commands:
+
+  # Stop all services
+  docker-compose down
+
+  # View logs
+  docker-compose logs -f
+
+  # View logs for specific service
+  docker-compose logs -f backend
+  docker-compose logs -f frontend
+
+  # Restart services
+  docker-compose restart
+
+  # Rebuild specific service
+  docker-compose build backend
+  docker-compose build frontend
+
+  # Remove all containers, volumes, and networks
+  docker-compose down -v
+
+  After running docker-compose up --build, your application will be available at:
+  - Frontend: http://localhost
+  - Backend API: http://localhost:8000
+  - API docs: http://localhost:8000/docs
+  ```

@@ -22,7 +22,13 @@ def create_app() -> FastAPI:
     # Configure CORS for frontend communication
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://localhost:5173", "http://localhost:3000"],
+        allow_origins=[
+            "http://localhost:5173",  # Development frontend
+            "http://localhost:3000",  # Alternative development frontend
+            "http://localhost:80",    # Docker production frontend
+            "http://127.0.0.1:80",    # Docker production frontend (alternative)
+            "http://frontend:80",     # Docker internal network
+        ],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
